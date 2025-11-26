@@ -14,6 +14,14 @@
       <div class="nav-bar"></div>
 
       <h1>{{ intro }}</h1>
+
+    <div style="border: 2pt; border-style:dashed; padding: 20pt">
+      <input v-model="word" type="text" placeholder="Type a word" id="wordInput" />
+      <button v-on:click="save(word)" id="saveButton" class="btn btn-primary m-1">Save</button>
+      <button v-on:click="show" id="showButton" class="btn btn-secondary m-1">Show</button>
+      <button v-on:click="clear" id="clearButton" class="btn btn-warning m-1">Clear</button>
+      <div id="output">{{Message}}</div>
+    </div>
       
     </div>
 
